@@ -45,7 +45,7 @@ class _TorahState extends State<Torah> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Exodus",
-                            items: 30,
+                            items: 40,
                           ),
                     ),
                   ),
@@ -62,7 +62,7 @@ class _TorahState extends State<Torah> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Leviticus",
-                            items: 25,
+                            items: 27,
                           ),
                     ),
                   ),
@@ -79,7 +79,7 @@ class _TorahState extends State<Torah> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Numbers",
-                            items: 15,
+                            items: 36,
                           ),
                     ),
                   ),
@@ -95,6 +95,7 @@ class _TorahState extends State<Torah> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
+                        items: 34,
                             title: "Deuteronomy",
                           ),
                     ),

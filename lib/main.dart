@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:religion/src/ui/MyHomePage.dart';
+import 'package:religion/src/MyHomePage.dart';
 import 'package:religion/src/widgets/Setting.dart';
 import 'package:religion/src/widgets/christans/Christianity.dart';
 import 'package:religion/src/widgets/muslims/Islam.dart';

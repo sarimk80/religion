@@ -1,22 +1,23 @@
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:religion/src/widgets/jews/model/Sefaria.dart';
-import 'package:religion/src/widgets/muslims/model/Chapters.dart';
 
-
-class Sefaria {
-  final String URL = "https://www.sefaria.org/api/texts/Genesis.1";
+class SefariaApi {
   final http.Client httpClient;
   final int id;
+  final String name;
 
-  Sefaria({@required this.httpClient, @required this.id});
+  SefariaApi(
+      {@required this.httpClient, @required this.id, @required this.name});
 
   Future<Sefaria> getSefariaApi() async {
+    final String URL = "https://www.sefaria.org/api/texts/$name.$id";
     final res = await this.httpClient.get(Uri.parse(URL));
     if (res.statusCode != 200) {
       return null;
     } else {
-      return null;
+      print(res.body);
+      return getSefaria(res.body);
     }
   }
 }

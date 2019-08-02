@@ -26,7 +26,11 @@ class _NeviimState extends State<Neviim> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "The Former Prophets",
-                  style: TextStyle(fontSize: 30, color: Colors.amberAccent),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.amberAccent,
+                      fontFamily: 'OpenSana',
+                      fontWeight: FontWeight.w700),
                 ),
               ),
             ),
@@ -84,14 +88,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Kings",
-                      items: 30,
-                    ),
+                          title: "Kings",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -107,19 +111,23 @@ class _NeviimState extends State<Neviim> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "The Latter Prophets",
-                  style: TextStyle(fontSize: 30, color: Colors.amberAccent),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.amberAccent,
+                      fontFamily: 'OpenSana',
+                      fontWeight: FontWeight.w700),
                 ),
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Isaiah",
-                      items: 30,
-                    ),
+                          title: "Isaiah",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -131,14 +139,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Jeremiah",
-                      items: 30,
-                    ),
+                          title: "Jeremiah",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -150,14 +158,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Ezekial",
-                      items: 35,
-                    ),
+                          title: "Ezekial",
+                          items: 35,
+                        ),
                   ),
                 );
               },
@@ -173,19 +181,23 @@ class _NeviimState extends State<Neviim> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "The Twelve Minor Prophets ",
-                  style: TextStyle(fontSize: 30, color: Colors.amberAccent),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.amberAccent,
+                      fontFamily: 'OpenSana',
+                      fontWeight: FontWeight.w700),
                 ),
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Hosea",
-                      items: 30,
-                    ),
+                          title: "Hosea",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -197,14 +209,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Joel",
-                      items: 30,
-                    ),
+                          title: "Joel",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -216,14 +228,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Amos",
-                      items: 30,
-                    ),
+                          title: "Amos",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -235,14 +247,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Obadiah",
-                      items: 30,
-                    ),
+                          title: "Obadiah",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -254,14 +266,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Jonah",
-                      items: 30,
-                    ),
+                          title: "Jonah",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -273,14 +285,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Micah",
-                      items: 30,
-                    ),
+                          title: "Micah",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -292,14 +304,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Nahum",
-                      items: 30,
-                    ),
+                          title: "Nahum",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -311,14 +323,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Habakkuk",
-                      items: 30,
-                    ),
+                          title: "Habakkuk",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -330,14 +342,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Zephahiah",
-                      items: 30,
-                    ),
+                          title: "Zephahiah",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -349,14 +361,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Haggai",
-                      items: 30,
-                    ),
+                          title: "Haggai",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -368,14 +380,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Zechariah",
-                      items: 30,
-                    ),
+                          title: "Zechariah",
+                          items: 30,
+                        ),
                   ),
                 );
               },
@@ -387,14 +399,14 @@ class _NeviimState extends State<Neviim> {
               ),
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                      title: "Malachi",
-                      items: 30,
-                    ),
+                          title: "Malachi",
+                          items: 30,
+                        ),
                   ),
                 );
               },

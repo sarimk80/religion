@@ -7,7 +7,6 @@ part of 'Sefaria.dart';
 // **************************************************************************
 
 Serializer<Sefaria> _$sefariaSerializer = new _$SefariaSerializer();
-Serializer<Text> _$textSerializer = new _$TextSerializer();
 
 class _$SefariaSerializer implements StructuredSerializer<Sefaria> {
   @override
@@ -60,7 +59,7 @@ class _$SefariaSerializer implements StructuredSerializer<Sefaria> {
         ..add('text')
         ..add(serializers.serialize(object.text,
             specifiedType:
-                const FullType(BuiltList, const [const FullType(Text)])));
+                const FullType(BuiltList, const [const FullType(String)])));
     }
     if (object.length != null) {
       result
@@ -109,7 +108,7 @@ class _$SefariaSerializer implements StructuredSerializer<Sefaria> {
         case 'text':
           result.text.replace(serializers.deserialize(value,
                   specifiedType:
-                      const FullType(BuiltList, const [const FullType(Text)]))
+                      const FullType(BuiltList, const [const FullType(String)]))
               as BuiltList<dynamic>);
           break;
         case 'length':
@@ -120,25 +119,6 @@ class _$SefariaSerializer implements StructuredSerializer<Sefaria> {
     }
 
     return result.build();
-  }
-}
-
-class _$TextSerializer implements StructuredSerializer<Text> {
-  @override
-  final Iterable<Type> types = const [Text, _$Text];
-  @override
-  final String wireName = 'Text';
-
-  @override
-  Iterable<Object> serialize(Serializers serializers, Text object,
-      {FullType specifiedType = FullType.unspecified}) {
-    return <Object>[];
-  }
-
-  @override
-  Text deserialize(Serializers serializers, Iterable<Object> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
-    return new TextBuilder().build();
   }
 }
 
@@ -156,7 +136,7 @@ class _$Sefaria extends Sefaria {
   @override
   final String heIndexTitle;
   @override
-  final BuiltList<Text> text;
+  final BuiltList<String> text;
   @override
   final int length;
 
@@ -258,9 +238,9 @@ class SefariaBuilder implements Builder<Sefaria, SefariaBuilder> {
   String get heIndexTitle => _$this._heIndexTitle;
   set heIndexTitle(String heIndexTitle) => _$this._heIndexTitle = heIndexTitle;
 
-  ListBuilder<Text> _text;
-  ListBuilder<Text> get text => _$this._text ??= new ListBuilder<Text>();
-  set text(ListBuilder<Text> text) => _$this._text = text;
+  ListBuilder<String> _text;
+  ListBuilder<String> get text => _$this._text ??= new ListBuilder<String>();
+  set text(ListBuilder<String> text) => _$this._text = text;
 
   int _length;
   int get length => _$this._length;
@@ -321,62 +301,6 @@ class SefariaBuilder implements Builder<Sefaria, SefariaBuilder> {
       }
       rethrow;
     }
-    replace(_$result);
-    return _$result;
-  }
-}
-
-class _$Text extends Text {
-  factory _$Text([void Function(TextBuilder) updates]) =>
-      (new TextBuilder()..update(updates)).build();
-
-  _$Text._() : super._();
-
-  @override
-  Text rebuild(void Function(TextBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
-
-  @override
-  TextBuilder toBuilder() => new TextBuilder()..replace(this);
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(other, this)) return true;
-    return other is Text;
-  }
-
-  @override
-  int get hashCode {
-    return 900189511;
-  }
-
-  @override
-  String toString() {
-    return newBuiltValueToStringHelper('Text').toString();
-  }
-}
-
-class TextBuilder implements Builder<Text, TextBuilder> {
-  _$Text _$v;
-
-  TextBuilder();
-
-  @override
-  void replace(Text other) {
-    if (other == null) {
-      throw new ArgumentError.notNull('other');
-    }
-    _$v = other as _$Text;
-  }
-
-  @override
-  void update(void Function(TextBuilder) updates) {
-    if (updates != null) updates(this);
-  }
-
-  @override
-  _$Text build() {
-    final _$result = _$v ?? new _$Text._();
     replace(_$result);
     return _$result;
   }

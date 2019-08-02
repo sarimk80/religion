@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:religion/src/widgets/book/Chapters.dart';
 
 class Bible extends StatefulWidget {
   final String title;
@@ -21,26 +22,52 @@ class _BibleState extends State<Bible> {
       body: Center(
         child: ListView.builder(
           itemCount: widget.items,
+          shrinkWrap: true,
+          physics: ClampingScrollPhysics(),
           itemBuilder: (context, index) {
-            return Center(
-              child: Container(
-                padding: EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                      color: Colors.white.withOpacity(0.5),
-                    ),
+            int result = index + 1;
+            return Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.white.withOpacity(0.5),
                   ),
                 ),
-                child: ListTile(
-                  leading: Text("$index"),
-                  title: Text(widget.title + " " + "$index"),
-                  onTap: () {},
-                ),
+              ),
+              child: ListTile(
+                title: Text(widget.title + " " + result.toString()),
+                leading: Text(result.toString()),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Chapters(
+                            id: result,
+                            name: widget.title,
+                          ),
+                    ),
+                  );
+                },
               ),
             );
           },
         ),
+      ),
+      floatingActionButton: FlatButton(
+        color: Colors.amberAccent,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(5),
+          ),
+        ),
+        child: Text(
+          "Resume",
+          style: TextStyle(
+              fontFamily: 'OpenSana',
+              fontWeight: FontWeight.w700,
+              color: Colors.black),
+        ),
+        onPressed: () {},
       ),
     );
   }

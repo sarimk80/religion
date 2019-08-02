@@ -24,7 +24,7 @@ abstract class Sefaria implements Built<Sefaria, SefariaBuilder> {
   @nullable
   String get heIndexTitle; //": "בראשית",
   @nullable
-  BuiltList<Text> get text; //": [],
+  BuiltList<String> get text; //": [],
   @nullable
   int get length; //": 50,
 
@@ -33,13 +33,7 @@ abstract class Sefaria implements Built<Sefaria, SefariaBuilder> {
   factory Sefaria([void Function(SefariaBuilder) updates]) = _$Sefaria;
 }
 
-abstract class Text implements Built<Text, TextBuilder> {
-  static Serializer<Text> get serializer => _$textSerializer;
 
-  Text._();
-
-  factory Text([void Function(TextBuilder) updates]) = _$Text;
-}
 
 Sefaria getSefaria(String jsonStr) {
   final res = json.jsonDecode(jsonStr);

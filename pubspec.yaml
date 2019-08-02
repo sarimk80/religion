@@ -48,7 +48,7 @@ flutter:
       fonts:
         - asset: fonts/OpenSans-Bold.ttf
           weight: 700
-        - asset: fonts/OpenSana-Regular.ttf
+        - asset: fonts/OpenSans-Regular.ttf
           weight: 300
 
 

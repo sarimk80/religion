@@ -26,7 +26,11 @@ class _KetuvimState extends State<Ketuvim> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "The three poetic books",
-                  style: TextStyle(fontSize: 30, color: Colors.amberAccent),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.amberAccent,
+                      fontFamily: 'OpenSana',
+                      fontWeight: FontWeight.w700),
                 ),
               ),
             ),
@@ -86,7 +90,11 @@ class _KetuvimState extends State<Ketuvim> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "The Five Megillot",
-                  style: TextStyle(fontSize: 30, color: Colors.amberAccent),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.amberAccent,
+                      fontFamily: 'OpenSana',
+                      fontWeight: FontWeight.w700),
                 ),
               ),
             ),
@@ -180,7 +188,11 @@ class _KetuvimState extends State<Ketuvim> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Other books",
-                  style: TextStyle(fontSize: 30, color: Colors.amberAccent),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.amberAccent,
+                      fontFamily: 'OpenSana',
+                      fontWeight: FontWeight.w700),
                 ),
               ),
             ),
