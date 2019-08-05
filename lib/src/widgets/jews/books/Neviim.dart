@@ -41,7 +41,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Joshua",
-                          items: 20,
+                          items: 24,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -49,7 +50,7 @@ class _NeviimState extends State<Neviim> {
               child: CardView(
                 title: "Joshua",
                 description:
-                    "The Book of Joshua (Hebrew: ספר יהושע‎ Sefer Yehoshua) is the sixth book in the Hebrew Bible and the Christian Old Testament, and is the first book of the Deuteronomistic history, the story of Israel from the conquest of Canaan to the Babylonian exile.",
+                    "The Book of Joshua is the sixth book in the Hebrew Bible and the Christian Old Testament, and is the first book of the Deuteronomistic history, the story of Israel from the conquest of Canaan to the Babylonian exile.",
                 icon: FontAwesomeIcons.torah,
               ),
             ),
@@ -59,7 +60,8 @@ class _NeviimState extends State<Neviim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Judges",
-                            items: 20,
+                            items: 21,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -77,6 +79,7 @@ class _NeviimState extends State<Neviim> {
                       builder: (context) => Bible(
                             title: "Samuel",
                             items: 30,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -95,6 +98,7 @@ class _NeviimState extends State<Neviim> {
                     builder: (context) => Bible(
                           title: "Kings",
                           items: 30,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -126,7 +130,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Isaiah",
-                          items: 30,
+                          items: 66,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -145,7 +150,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Jeremiah",
-                          items: 30,
+                          items: 52,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -164,7 +170,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Ezekial",
-                          items: 35,
+                          items: 48,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -196,7 +203,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Hosea",
-                          items: 30,
+                          items: 14,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -215,7 +223,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Joel",
-                          items: 30,
+                          items: 4,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -234,7 +243,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Amos",
-                          items: 30,
+                          items: 9,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -253,7 +263,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Obadiah",
-                          items: 30,
+                          items: 1,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -272,7 +283,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Jonah",
-                          items: 30,
+                          items: 4,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -291,7 +303,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Micah",
-                          items: 30,
+                          items: 7,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -310,7 +323,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Nahum",
-                          items: 30,
+                          items: 3,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -329,7 +343,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Habakkuk",
-                          items: 30,
+                          items: 3,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -347,8 +362,9 @@ class _NeviimState extends State<Neviim> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                          title: "Zephahiah",
-                          items: 30,
+                          title: "Zephaniah",
+                          items: 3,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -367,7 +383,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Haggai",
-                          items: 30,
+                          items: 2,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -386,7 +403,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Zechariah",
-                          items: 30,
+                          items: 14,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -405,7 +423,8 @@ class _NeviimState extends State<Neviim> {
                   MaterialPageRoute(
                     builder: (context) => Bible(
                           title: "Malachi",
-                          items: 30,
+                          items: 3,
+                          religion: "Jews",
                         ),
                   ),
                 );

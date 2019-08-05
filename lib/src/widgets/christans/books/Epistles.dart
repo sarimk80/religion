@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:religion/src/widgets/bible/Bible.dart';
 import 'package:religion/src/widgets/card/CardView.dart';
 
 class Epistles extends StatefulWidget {
@@ -24,63 +25,189 @@ class _EpistlesState extends State<Epistles> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   "Pauline letters to churches",
-                  style: TextStyle(fontSize: 30, color: Colors.amberAccent),
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.amberAccent,
+                      fontFamily: 'OpenSana',
+                      fontWeight: FontWeight.w700),
                 ),
               ),
             ),
-            CardView(
-              title: "Epistle to the Romans",
-              description:
-                  "The Gospel According to Matthew is the first book of the New Testament and one of the three synoptic gospels.",
-              icon: FontAwesomeIcons.church,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Bible(
+                          title: "Epistle to the Romans",
+                          items: 16,
+                          religion: "Christianity",
+                        ),
+                  ),
+                );
+              },
+              child: CardView(
+                title: "Epistle to the Romans",
+                description:
+                    "The Gospel According to Matthew is the first book of the New Testament and one of the three synoptic gospels.",
+                icon: FontAwesomeIcons.church,
+              ),
             ),
-            CardView(
-              title: "First Epistle to the Corinthians",
-              description:
-                  "The Gospel According to Mark is one of the four canonical gospels and one of the three synoptic gospels.",
-              icon: FontAwesomeIcons.bible,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Bible(
+                          title: "First Epistle to the Corinthians",
+                          items: 16,
+                          religion: "Christianity",
+                        ),
+                  ),
+                );
+              },
+              child: CardView(
+                title: "First Epistle to the Corinthians",
+                description:
+                    "The Gospel According to Mark is one of the four canonical gospels and one of the three synoptic gospels.",
+                icon: FontAwesomeIcons.bible,
+              ),
             ),
-            CardView(
-              title: "Second Epistle to the Corinthians",
-              description:
-                  "The Gospel According to Luke also called the Gospel of Luke, or simply Luke, is the third of the four canonical Gospels.",
-              icon: FontAwesomeIcons.cross,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Bible(
+                          title: "Second Epistle to the Corinthians",
+                          items: 13,
+                          religion: "Christianity",
+                        ),
+                  ),
+                );
+              },
+              child: CardView(
+                title: "Second Epistle to the Corinthians",
+                description:
+                    "The Gospel According to Luke also called the Gospel of Luke, or simply Luke, is the third of the four canonical Gospels.",
+                icon: FontAwesomeIcons.cross,
+              ),
             ),
-            CardView(
-              title: "Epistle to the Galatians",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Bible(
+                          title: "Epistle to the Galatians",
+                          items: 6,
+                          religion: "Christianity",
+                        ),
+                  ),
+                );
+              },
+              child: CardView(
+                title: "Epistle to the Galatians",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Epistle to the Ephesians*",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Bible(
+                          title: "Epistle to the Ephesians*",
+                          items: 6,
+                          religion: "Christianity",
+                        ),
+                  ),
+                );
+              },
+              child: CardView(
+                title: "Epistle to the Ephesians*",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Epistle to the Philippians",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Bible(
+                          title: "Epistle to the Philippians",
+                          items: 4,
+                          religion: "Christianity",
+                        ),
+                  ),
+                );
+              },
+              child: CardView(
+                title: "Epistle to the Philippians",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Epistle to the Colossians*",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Bible(
+                          title: "Epistle to the Colossians*",
+                          items: 4,
+                          religion: "Christianity",
+                        ),
+                  ),
+                );
+              },
+              child: CardView(
+                title: "Epistle to the Colossians*",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "First Epistle to the Thessalonians",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "First Epistle to the Thessalonians",
+                            items: 5,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "First Epistle to the Thessalonians",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Second Epistle to the Thessalonians*",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Second Epistle to the Thessalonians*",
+                            items: 3,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Second Epistle to the Thessalonians*",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
             Center(
               child: Padding(
@@ -91,29 +218,77 @@ class _EpistlesState extends State<Epistles> {
                 ),
               ),
             ),
-            CardView(
-              title: "First Epistle to Timothy*",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "First Epistle to Timothy",
+                            items: 6,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "First Epistle to Timothy*",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Second Epistle to Timothy*",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Second Epistle to Timothy",
+                            items: 4,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Second Epistle to Timothy*",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Epistle to Titus*",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Epistle to Titus",
+                            items: 3,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Epistle to Titus*",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Epistle to Philemon",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Epistle to Philemon",
+                            items: 1,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Epistle to Philemon",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
             Center(
               child: Padding(
@@ -124,11 +299,23 @@ class _EpistlesState extends State<Epistles> {
                 ),
               ),
             ),
-            CardView(
-              title: "Hebrews",
-              description:
-                  "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Hebrews",
+                            items: 13,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Hebrews",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
             Center(
               child: Padding(
@@ -139,47 +326,131 @@ class _EpistlesState extends State<Epistles> {
                 ),
               ),
             ),
-            CardView(
-              title: "Epistle of James",
-              description:
-              "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Epistle of James",
+                            items: 5,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Epistle of James",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "First Epistle of Peter",
-              description:
-              "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "First Epistle of Peter",
+                            items: 5,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "First Epistle of Peter",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Second Epistle of Peter",
-              description:
-              "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Second Epistle of Peter",
+                            items: 3,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Second Epistle of Peter",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "First Epistle of John",
-              description:
-              "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "First Epistle of John",
+                            items: 5,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "First Epistle of John",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Second Epistle of John",
-              description:
-              "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Second Epistle of John",
+                            items: 1,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Second Epistle of John",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Third Epistle of John",
-              description:
-              "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Third Epistle of John",
+                            items: 1,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Third Epistle of John",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
-            CardView(
-              title: "Epistle of Jude",
-              description:
-              "The Gospel of John is the fourth of the canonical gospels",
-              icon: FontAwesomeIcons.ankh,
+            InkWell(
+              onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Bible(
+                            title: "Epistle of Jude",
+                            items: 1,
+                            religion: "Christianity",
+                          ),
+                    ),
+                  ),
+              child: CardView(
+                title: "Epistle of Jude",
+                description:
+                    "The Gospel of John is the fourth of the canonical gospels",
+                icon: FontAwesomeIcons.ankh,
+              ),
             ),
           ],
         ),

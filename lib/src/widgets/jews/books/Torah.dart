@@ -28,6 +28,7 @@ class _TorahState extends State<Torah> {
                     builder: (context) => Bible(
                           title: "Genesis",
                           items: 50,
+                          religion: "Jews",
                         ),
                   ),
                 );
@@ -46,6 +47,7 @@ class _TorahState extends State<Torah> {
                       builder: (context) => Bible(
                             title: "Exodus",
                             items: 40,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -63,6 +65,7 @@ class _TorahState extends State<Torah> {
                       builder: (context) => Bible(
                             title: "Leviticus",
                             items: 27,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -80,6 +83,7 @@ class _TorahState extends State<Torah> {
                       builder: (context) => Bible(
                             title: "Numbers",
                             items: 36,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -95,8 +99,9 @@ class _TorahState extends State<Torah> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                        items: 34,
+                            items: 34,
                             title: "Deuteronomy",
+                            religion: "Jews",
                           ),
                     ),
                   ),

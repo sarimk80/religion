@@ -40,7 +40,8 @@ class _KetuvimState extends State<Ketuvim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Psalms",
-                            items: 10,
+                            items: 150,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -57,7 +58,8 @@ class _KetuvimState extends State<Ketuvim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Proverbs",
-                            items: 10,
+                            items: 31,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -74,7 +76,8 @@ class _KetuvimState extends State<Ketuvim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Job",
-                            items: 10,
+                            items: 42,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -104,7 +107,8 @@ class _KetuvimState extends State<Ketuvim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Song of Songs",
-                            items: 10,
+                            items: 8,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -121,7 +125,8 @@ class _KetuvimState extends State<Ketuvim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Ruth",
-                            items: 10,
+                            items: 4,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -138,7 +143,8 @@ class _KetuvimState extends State<Ketuvim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Lamentations",
-                            items: 10,
+                            items: 5,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -155,7 +161,8 @@ class _KetuvimState extends State<Ketuvim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Ecclesiastes",
-                            items: 10,
+                            items: 12,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -173,6 +180,7 @@ class _KetuvimState extends State<Ketuvim> {
                       builder: (context) => Bible(
                             title: "Esther",
                             items: 10,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -202,7 +210,8 @@ class _KetuvimState extends State<Ketuvim> {
                     MaterialPageRoute(
                       builder: (context) => Bible(
                             title: "Daniel",
-                            items: 10,
+                            items: 12,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -218,8 +227,9 @@ class _KetuvimState extends State<Ketuvim> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Ezra and Nehemiah",
+                            title: "Ezra",
                             items: 10,
+                            religion: "Jews",
                           ),
                     ),
                   ),
@@ -237,6 +247,7 @@ class _KetuvimState extends State<Ketuvim> {
                       builder: (context) => Bible(
                             title: "Chronicles",
                             items: 10,
+                            religion: "Jews",
                           ),
                     ),
                   ),
