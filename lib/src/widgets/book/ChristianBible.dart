@@ -34,7 +34,11 @@ class _ChristianBibleState extends State<ChristianBible> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(widget.name),
+          title: Text(
+            widget.name + " " + widget.id.toString(),
+            style:
+                TextStyle(fontFamily: 'OpenSana', fontWeight: FontWeight.w700),
+          ),
         ),
         body: BlocBuilder(
           bloc: christianityBloc,
@@ -68,7 +72,10 @@ class _ChristianBibleState extends State<ChristianBible> {
     return Container(
       padding: EdgeInsets.all(10),
       child: ListTile(
-        title: Text(e.text.replaceAll("\n", "")),
+        title: Text(
+          e.text.replaceAll("\n", ""),
+          style: TextStyle(fontFamily: 'OpenSana', fontWeight: FontWeight.w300),
+        ),
       ),
     );
   }

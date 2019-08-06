@@ -33,7 +33,10 @@ class _QuranState extends State<Quran> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.name),
+        title: Text(
+          widget.name,
+          style: TextStyle(fontFamily: 'OpenSana', fontWeight: FontWeight.w700),
+        ),
       ),
       body: BlocBuilder(
         bloc: versesBloc,

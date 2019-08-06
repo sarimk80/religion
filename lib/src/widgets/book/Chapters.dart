@@ -37,7 +37,10 @@ class _ChaptersState extends State<Chapters> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.name + " " + widget.id.toString()),
+        title: Text(
+          widget.name + " " + widget.id.toString(),
+          style: TextStyle(fontFamily: 'OpenSana', fontWeight: FontWeight.w700),
+        ),
       ),
       body: BlocBuilder(
         bloc: jewsBloc,
@@ -78,7 +81,11 @@ class _ChaptersState extends State<Chapters> {
       return Container(
         padding: EdgeInsets.all(5),
         child: ListTile(
-          title: Text(e.replaceAll('<i></i>', '')),
+          title: Text(
+            e.replaceAll('<i></i>', ''),
+            style:
+                TextStyle(fontFamily: 'OpenSana', fontWeight: FontWeight.w300),
+          ),
         ),
       );
   }
