@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
-import 'package:religion/src/widgets/muslims/model/Chapters.dart';
+import 'package:religion/src/widgets/muslims/model/chaptermodel/Chapters.dart';
 
 class ChaptersApi {
   final String URL = "http://api.alquran.cloud/v1/surah";

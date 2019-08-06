@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:religion/src/widgets/book/Chapters.dart';
+import 'package:religion/src/widgets/book/ChristianBible.dart';
 
 class Bible extends StatefulWidget {
   final String title;
@@ -53,7 +54,15 @@ class _BibleState extends State<Bible> {
                     ),
                   );
                 } else {
-                  print("Hello Christans");
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ChristianBible(
+                            id: result,
+                            name: widget.title,
+                          ),
+                    ),
+                  );
                 }
               },
             ),

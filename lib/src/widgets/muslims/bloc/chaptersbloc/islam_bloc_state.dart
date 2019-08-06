@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:meta/meta.dart';
-import 'package:religion/src/widgets/muslims/model/Chapters.dart';
+import 'package:religion/src/widgets/muslims/model/chaptermodel/Chapters.dart';
 
 @immutable
 abstract class IslamBlocState {}

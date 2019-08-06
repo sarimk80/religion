@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:religion/src/widgets/muslims/model/Chapters.dart';
-import 'package:religion/src/widgets/muslims/repository/Repository.dart';
-import './bloc.dart';
+import 'package:religion/src/widgets/muslims/model/chaptermodel/Chapters.dart';
+import 'package:religion/src/widgets/muslims/repository/chapterrepo/Repository.dart';
+import 'package:religion/src/widgets/muslims/bloc/chaptersbloc/bloc.dart';
 
 class IslamBlocBloc extends Bloc<IslamBlocEvent, IslamBlocState> {
   ChaptersRepo chaptersRepo;

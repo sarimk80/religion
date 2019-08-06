@@ -7,7 +7,7 @@ part of 'Chapters.dart';
 // **************************************************************************
 
 Serializer<Chapters> _$chaptersSerializer = new _$ChaptersSerializer();
-Serializer<Data> _$dataSerializer = new _$DataSerializer();
+Serializer<GetData> _$getDataSerializer = new _$GetDataSerializer();
 
 class _$ChaptersSerializer implements StructuredSerializer<Chapters> {
   @override
@@ -27,7 +27,7 @@ class _$ChaptersSerializer implements StructuredSerializer<Chapters> {
       'data',
       serializers.serialize(object.data,
           specifiedType:
-              const FullType(BuiltList, const [const FullType(Data)])),
+              const FullType(BuiltList, const [const FullType(GetData)])),
     ];
 
     return result;
@@ -54,8 +54,8 @@ class _$ChaptersSerializer implements StructuredSerializer<Chapters> {
           break;
         case 'data':
           result.data.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(BuiltList, const [const FullType(Data)]))
+                  specifiedType: const FullType(
+                      BuiltList, const [const FullType(GetData)]))
               as BuiltList<dynamic>);
           break;
       }
@@ -65,14 +65,14 @@ class _$ChaptersSerializer implements StructuredSerializer<Chapters> {
   }
 }
 
-class _$DataSerializer implements StructuredSerializer<Data> {
+class _$GetDataSerializer implements StructuredSerializer<GetData> {
   @override
-  final Iterable<Type> types = const [Data, _$Data];
+  final Iterable<Type> types = const [GetData, _$GetData];
   @override
-  final String wireName = 'Data';
+  final String wireName = 'GetData';
 
   @override
-  Iterable<Object> serialize(Serializers serializers, Data object,
+  Iterable<Object> serialize(Serializers serializers, GetData object,
       {FullType specifiedType = FullType.unspecified}) {
     final result = <Object>[
       'number',
@@ -97,9 +97,9 @@ class _$DataSerializer implements StructuredSerializer<Data> {
   }
 
   @override
-  Data deserialize(Serializers serializers, Iterable<Object> serialized,
+  GetData deserialize(Serializers serializers, Iterable<Object> serialized,
       {FullType specifiedType = FullType.unspecified}) {
-    final result = new DataBuilder();
+    final result = new GetDataBuilder();
 
     final iterator = serialized.iterator;
     while (iterator.moveNext()) {
@@ -144,7 +144,7 @@ class _$Chapters extends Chapters {
   @override
   final String status;
   @override
-  final BuiltList<Data> data;
+  final BuiltList<GetData> data;
 
   factory _$Chapters([void Function(ChaptersBuilder) updates]) =>
       (new ChaptersBuilder()..update(updates)).build();
@@ -203,9 +203,9 @@ class ChaptersBuilder implements Builder<Chapters, ChaptersBuilder> {
   String get status => _$this._status;
   set status(String status) => _$this._status = status;
 
-  ListBuilder<Data> _data;
-  ListBuilder<Data> get data => _$this._data ??= new ListBuilder<Data>();
-  set data(ListBuilder<Data> data) => _$this._data = data;
+  ListBuilder<GetData> _data;
+  ListBuilder<GetData> get data => _$this._data ??= new ListBuilder<GetData>();
+  set data(ListBuilder<GetData> data) => _$this._data = data;
 
   ChaptersBuilder();
 
@@ -254,7 +254,7 @@ class ChaptersBuilder implements Builder<Chapters, ChaptersBuilder> {
   }
 }
 
-class _$Data extends Data {
+class _$GetData extends GetData {
   @override
   final int number;
   @override
@@ -268,10 +268,10 @@ class _$Data extends Data {
   @override
   final String revelationType;
 
-  factory _$Data([void Function(DataBuilder) updates]) =>
-      (new DataBuilder()..update(updates)).build();
+  factory _$GetData([void Function(GetDataBuilder) updates]) =>
+      (new GetDataBuilder()..update(updates)).build();
 
-  _$Data._(
+  _$GetData._(
       {this.number,
       this.name,
       this.englishName,
@@ -280,36 +280,36 @@ class _$Data extends Data {
       this.revelationType})
       : super._() {
     if (number == null) {
-      throw new BuiltValueNullFieldError('Data', 'number');
+      throw new BuiltValueNullFieldError('GetData', 'number');
     }
     if (name == null) {
-      throw new BuiltValueNullFieldError('Data', 'name');
+      throw new BuiltValueNullFieldError('GetData', 'name');
     }
     if (englishName == null) {
-      throw new BuiltValueNullFieldError('Data', 'englishName');
+      throw new BuiltValueNullFieldError('GetData', 'englishName');
     }
     if (englishNameTranslation == null) {
-      throw new BuiltValueNullFieldError('Data', 'englishNameTranslation');
+      throw new BuiltValueNullFieldError('GetData', 'englishNameTranslation');
     }
     if (numberOfAyahs == null) {
-      throw new BuiltValueNullFieldError('Data', 'numberOfAyahs');
+      throw new BuiltValueNullFieldError('GetData', 'numberOfAyahs');
     }
     if (revelationType == null) {
-      throw new BuiltValueNullFieldError('Data', 'revelationType');
+      throw new BuiltValueNullFieldError('GetData', 'revelationType');
     }
   }
 
   @override
-  Data rebuild(void Function(DataBuilder) updates) =>
+  GetData rebuild(void Function(GetDataBuilder) updates) =>
       (toBuilder()..update(updates)).build();
 
   @override
-  DataBuilder toBuilder() => new DataBuilder()..replace(this);
+  GetDataBuilder toBuilder() => new GetDataBuilder()..replace(this);
 
   @override
   bool operator ==(Object other) {
     if (identical(other, this)) return true;
-    return other is Data &&
+    return other is GetData &&
         number == other.number &&
         name == other.name &&
         englishName == other.englishName &&
@@ -332,7 +332,7 @@ class _$Data extends Data {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper('Data')
+    return (newBuiltValueToStringHelper('GetData')
           ..add('number', number)
           ..add('name', name)
           ..add('englishName', englishName)
@@ -343,8 +343,8 @@ class _$Data extends Data {
   }
 }
 
-class DataBuilder implements Builder<Data, DataBuilder> {
-  _$Data _$v;
+class GetDataBuilder implements Builder<GetData, GetDataBuilder> {
+  _$GetData _$v;
 
   int _number;
   int get number => _$this._number;
@@ -372,9 +372,9 @@ class DataBuilder implements Builder<Data, DataBuilder> {
   set revelationType(String revelationType) =>
       _$this._revelationType = revelationType;
 
-  DataBuilder();
+  GetDataBuilder();
 
-  DataBuilder get _$this {
+  GetDataBuilder get _$this {
     if (_$v != null) {
       _number = _$v.number;
       _name = _$v.name;
@@ -388,22 +388,22 @@ class DataBuilder implements Builder<Data, DataBuilder> {
   }
 
   @override
-  void replace(Data other) {
+  void replace(GetData other) {
     if (other == null) {
       throw new ArgumentError.notNull('other');
     }
-    _$v = other as _$Data;
+    _$v = other as _$GetData;
   }
 
   @override
-  void update(void Function(DataBuilder) updates) {
+  void update(void Function(GetDataBuilder) updates) {
     if (updates != null) updates(this);
   }
 
   @override
-  _$Data build() {
+  _$GetData build() {
     final _$result = _$v ??
-        new _$Data._(
+        new _$GetData._(
             number: number,
             name: name,
             englishName: englishName,

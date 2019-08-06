@@ -12,7 +12,7 @@ abstract class Chapters implements Built<Chapters, ChaptersBuilder> {
 
   int get code; //": 200,
   String get status; //": "OK",
-  BuiltList<Data> get data; //": [
+  BuiltList<GetData> get data; //": [
 //  {
 //  "number": 1,
 //  "name": "سُورَةُ ٱلْفَاتِحَةِ",
@@ -26,8 +26,8 @@ abstract class Chapters implements Built<Chapters, ChaptersBuilder> {
   factory Chapters([void Function(ChaptersBuilder) updates]) = _$Chapters;
 }
 
-abstract class Data implements Built<Data, DataBuilder> {
-  static Serializer<Data> get serializer => _$dataSerializer;
+abstract class GetData implements Built<GetData, GetDataBuilder> {
+  static Serializer<GetData> get serializer => _$getDataSerializer;
 
   int get number; //": 1,
   String get name; //": "سُورَةُ ٱلْفَاتِحَةِ",
@@ -35,9 +35,10 @@ abstract class Data implements Built<Data, DataBuilder> {
   String get englishNameTranslation; //": "The Opening",
   int get numberOfAyahs; //": 7,
   String get revelationType; //": "Meccan"
-  Data._();
+  GetData._();
 
-  factory Data([void Function(DataBuilder) updates]) = _$Data;
+  factory GetData([void Function(GetDataBuilder) updates]) = _$GetData;
+
 }
 
 Chapters getChapter(String Strjson) {

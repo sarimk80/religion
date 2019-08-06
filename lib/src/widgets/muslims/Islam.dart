@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:religion/src/widgets/muslims/bloc/bloc.dart';
-import 'package:religion/src/widgets/muslims/model/Chapters.dart';
-import 'package:religion/src/widgets/muslims/network/ChaptersApi.dart';
-import 'package:religion/src/widgets/muslims/repository/Repository.dart';
+import 'package:religion/src/widgets/book/Quran.dart';
+import 'package:religion/src/widgets/muslims/bloc/chaptersbloc/bloc.dart';
+import 'package:religion/src/widgets/muslims/model/chaptermodel/Chapters.dart';
+import 'package:religion/src/widgets/muslims/network/chapterapi/ChaptersApi.dart';
+import 'package:religion/src/widgets/muslims/repository/chapterrepo/Repository.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -53,7 +54,7 @@ class _IslamState extends State<Islam> {
     ));
   }
 
-  Widget _builtData(Data e) {
+  Widget _builtData(GetData e) {
     return Container(
       padding: EdgeInsets.all(5),
       decoration: BoxDecoration(
@@ -78,7 +79,15 @@ class _IslamState extends State<Islam> {
           e.revelationType,
           style: TextStyle(fontFamily: 'OpenSana', fontWeight: FontWeight.w300),
         ),
-        onTap: () => {},
+        onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Quran(
+                      id: e.number,
+                      name: e.englishName,
+                    ),
+              ),
+            ),
       ),
     );
   }
