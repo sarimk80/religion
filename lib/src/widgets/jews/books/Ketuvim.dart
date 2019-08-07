@@ -66,7 +66,7 @@ class _KetuvimState extends State<Ketuvim> {
               child: CardView(
                 title: "Proverbs",
                 description:
-                    """The Book of Proverbs (Hebrew: מִשְלֵי, Míshlê (Shlomoh), "Proverbs (of Solomon)") is the second book of the third section (called Writings) of the Hebrew Bible and a book of the Christian Old Testament.""",
+                    """The Book of Proverbs is the second book of the third section (called Writings) of the Hebrew Bible and a book of the Christian Old Testament.""",
                 icon: FontAwesomeIcons.hanukiah,
               ),
             ),
@@ -115,7 +115,7 @@ class _KetuvimState extends State<Ketuvim> {
               child: CardView(
                 title: "Song of Songs",
                 description:
-                    """The Song of Songs, also Song of Solomon or Canticles (Hebrew: שִׁיר הַשִּׁירִים Šîr HaŠŠîrîm, Greek and Ancient Greek: Ἆισμα Ἀισμάτων, romanized: Âisma Āismátōn; Latin: Canticum Canticorum), is one of the megillot (scrolls) found in the last section of the Tanakh, known as the Ketuvim (or "Writings"), and a book of the Old Testament.""",
+                    """The Song of Songs, also Song of Solomon or Canticles is one of the megillot (scrolls) found in the last section of the Tanakh, known as the Ketuvim (or "Writings"), and a book of the Old Testament.""",
                 icon: FontAwesomeIcons.starOfDavid,
               ),
             ),
@@ -133,7 +133,7 @@ class _KetuvimState extends State<Ketuvim> {
               child: CardView(
                 title: "Ruth",
                 description:
-                    """The Book of Ruth (abbreviated Rth) (Hebrew: מגילת רות‎, Megilath Ruth, "the Scroll of Ruth", one of the Five Megillot) is included in the third division, or the Writings (Ketuvim), of the Hebrew Bible; in most Christian canons it is treated as a history book and placed between Judges and 1 Samuel,[1] as it is set "in the days when the judges judged",""",
+                    """The Book of Ruth is included in the third division, or the Writings (Ketuvim), of the Hebrew Bible; in most Christian canons it is treated as a history book and placed between Judges and 1 Samuel,[1] as it is set "in the days when the judges judged",""",
                 icon: FontAwesomeIcons.starOfDavid,
               ),
             ),
@@ -151,7 +151,7 @@ class _KetuvimState extends State<Ketuvim> {
               child: CardView(
                 title: "Lamentations",
                 description:
-                    """The Book of Lamentations (Hebrew: אֵיכָה, ‘Êykhôh, from its incipit meaning "how") is a collection of poetic laments for the destruction of Jerusalem.""",
+                    """The Book of Lamentations is a collection of poetic laments for the destruction of Jerusalem.""",
                 icon: FontAwesomeIcons.synagogue,
               ),
             ),
@@ -254,7 +254,7 @@ class _KetuvimState extends State<Ketuvim> {
               child: CardView(
                 title: "Chronicles",
                 description:
-                    "The Book of Chronicles (Hebrew: דִּבְרֵי־הַיָּמִים Diḇrê Hayyāmîm 'The Matters [of] the Days') is a Hebrew prose work constituting part of Jewish and Christian scripture.",
+                    "The Book of Chronicles is a Hebrew prose work constituting part of Jewish and Christian scripture.",
                 icon: FontAwesomeIcons.starOfDavid,
               ),
             ),

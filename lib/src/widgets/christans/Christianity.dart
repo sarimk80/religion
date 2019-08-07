@@ -44,7 +44,7 @@ class _ChristianityState extends State<Christianity> {
                     builder: (context) => Bible(
                           title: "Acts of the Apostles",
                           items: 28,
-                      religion: "Christianity",
+                          religion: "Christianity",
                         ),
                   ),
                 );
@@ -77,14 +77,14 @@ class _ChristianityState extends State<Christianity> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Apocalypse",
+                            title: "Revelation",
                             items: 22,
-                        religion: "Christianity",
+                            religion: "Christianity",
                           ),
                     ),
                   ),
               child: CardView(
-                title: "Apocalypse",
+                title: "Revelation",
                 description:
                     "Apocalyptic literature is a genre of prophetical writing that developed in post-Exilic Jewish culture and was popular among millennialist early Christians.",
                 icon: FontAwesomeIcons.bible,
@@ -93,6 +93,7 @@ class _ChristianityState extends State<Christianity> {
           ],
         ),
       ),
+
     );
   }
 }

@@ -79,4 +79,9 @@ class _ChristianBibleState extends State<ChristianBible> {
       ),
     );
   }
+  @override
+  void dispose() {
+    christianityBloc.dispose();
+    super.dispose();
+  }
 }

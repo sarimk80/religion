@@ -69,18 +69,18 @@ class _QuranState extends State<Quran> {
   Widget _builtAyahs(Ayahs e) {
     return Container(
       padding: EdgeInsets.all(5),
-      decoration: BoxDecoration(
-        border: Border(
-          bottom: BorderSide(
-            color: Colors.white.withOpacity(0.5),
-          ),
-        ),
-      ),
+
       child: ListTile(
         title: Text(e.text,
             style:
                 TextStyle(fontFamily: 'OpenSana', fontWeight: FontWeight.w300)),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    versesBloc.dispose();
+    super.dispose();
   }
 }

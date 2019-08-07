@@ -372,7 +372,7 @@ class _NeviimState extends State<Neviim> {
               child: CardView(
                 title: "Zephaniah",
                 description:
-                    """The Book of Zephaniah /ˌzɛfəˈnaɪ.ə/ (Hebrew: צְפַנְיָה, Tsfanya) is the ninth of the Twelve Minor Prophets, preceded by the Book of Habakkuk and followed by the Book of Haggai. Zephaniah means "Yahweh has hidden/protected,"[1] or "Yahweh hides".""",
+                    """The Book of Zephaniah is the ninth of the Twelve Minor Prophets, preceded by the Book of Habakkuk and followed by the Book of Haggai. Zephaniah means "Yahweh has hidden/protected,"[1] or "Yahweh hides".""",
                 icon: FontAwesomeIcons.starOfDavid,
               ),
             ),

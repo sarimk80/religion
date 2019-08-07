@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:religion/src/widgets/book/Quran.dart';
 import 'package:religion/src/widgets/muslims/bloc/chaptersbloc/bloc.dart';
 import 'package:religion/src/widgets/muslims/model/chaptermodel/Chapters.dart';
@@ -27,31 +28,37 @@ class _IslamState extends State<Islam> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: BlocBuilder(
-      bloc: islamBloc,
-      builder: (BuildContext context, IslamBlocState state) {
-        if (state is LoadingIslamState) {
-          return Center(
-            child: CircularProgressIndicator(),
-          );
-        }
-        if (state is LoadedIslamState) {
-          return ListView(
-              shrinkWrap: true,
-              physics: ClampingScrollPhysics(),
-              children: state.chapters.data.map(_builtData).toList());
-        }
-        if (state is ErrorIslamState) {
-          return Center(
-            child: Text("No Internet Connection"),
-          );
-        } else {
-          return Center(
-            child: Text("Error"),
-          );
-        }
-      },
-    ));
+      body: BlocBuilder(
+        bloc: islamBloc,
+        builder: (BuildContext context, IslamBlocState state) {
+          if (state is LoadingIslamState) {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+          if (state is LoadedIslamState) {
+            return ListView(
+                shrinkWrap: true,
+                physics: ClampingScrollPhysics(),
+                children: state.chapters.data.map(_builtData).toList());
+          }
+          if (state is ErrorIslamState) {
+            return Center(
+              child: Text("No Internet Connection"),
+            );
+          } else {
+            return Center(
+              child: Text(""),
+            );
+          }
+        },
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        label: Text("Resume"),
+        icon: Icon(FontAwesomeIcons.bookmark),
+      ),
+    );
   }
 
   Widget _builtData(GetData e) {

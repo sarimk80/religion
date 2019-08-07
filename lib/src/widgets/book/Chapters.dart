@@ -29,7 +29,6 @@ class _ChaptersState extends State<Chapters> {
     );
     jewsBloc = JewsBloc(sefariaRepo: sefariaRepo);
     jewsBloc.dispatch(Fetch());
-
     super.initState();
   }
 
@@ -88,5 +87,11 @@ class _ChaptersState extends State<Chapters> {
           ),
         ),
       );
+  }
+
+  @override
+  void dispose() {
+    jewsBloc.dispose();
+    super.dispose();
   }
 }

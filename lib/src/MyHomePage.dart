@@ -47,32 +47,43 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       body: _childrens[_currentState],
-      bottomNavigationBar: BottomNavigationBar(
-        showUnselectedLabels: false,
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.amberAccent,
-        unselectedItemColor: Colors.grey[400],
-        onTap: onTapped,
-        currentIndex: _currentState,
-        elevation: 5,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.starOfDavid),
-            title: Text("Judaism"),
+      bottomNavigationBar: Container(
+
+        decoration: BoxDecoration(
+          border: Border(
+            top: BorderSide(
+              width: 0.3,
+              color: Colors.white.withOpacity(0.5),
+            ),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.cross),
-            title: Text("Christianity"),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.starAndCrescent),
-            title: Text("Islam"),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.cog),
-            title: Text("Setting"),
-          )
-        ],
+        ),
+        child: BottomNavigationBar(
+          showUnselectedLabels: false,
+          type: BottomNavigationBarType.shifting,
+          selectedItemColor: Colors.amberAccent,
+          unselectedItemColor: Colors.grey[400],
+          onTap: onTapped,
+          currentIndex: _currentState,
+          elevation: 5,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.starOfDavid),
+              title: Text("Judaism"),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.cross),
+              title: Text("Christianity"),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.starAndCrescent),
+              title: Text("Islam"),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(FontAwesomeIcons.cog),
+              title: Text("Setting"),
+            )
+          ],
+        ),
       ),
     );
     //    return SafeArea(

@@ -69,22 +69,6 @@ class _BibleState extends State<Bible> {
           );
         },
       ),
-      floatingActionButton: FlatButton(
-        color: Colors.amberAccent,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(5),
-          ),
-        ),
-        child: Text(
-          "Resume",
-          style: TextStyle(
-              fontFamily: 'OpenSana',
-              fontWeight: FontWeight.w700,
-              color: Colors.black),
-        ),
-        onPressed: () {},
-      ),
     );
   }
 }

@@ -22,4 +22,39 @@ void main() {
     expect(find.text('Torah'), findsOneWidget);
     expect(find.text('Ketuvim'), findsOneWidget);
   });
+  testWidgets("Christianity", (WidgetTester tester) async{
+    await tester.pumpWidget(MyApp());
+
+    // Tap the '+' icon and trigger a frame.
+    await tester.tap(find.byIcon(FontAwesomeIcons.cross));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('Gospels'), findsOneWidget);
+    expect(find.text('Epistles'), findsOneWidget);
+  });
+  testWidgets("Islam", (WidgetTester tester) async{
+    await tester.pumpWidget(MyApp());
+
+    // Tap the '+' icon and trigger a frame.
+    await tester.tap(find.byIcon(FontAwesomeIcons.starAndCrescent));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('Religion'), findsOneWidget);
+    //expect(find.text('1'), findsOneWidget);
+  });
+
+  testWidgets("Settings", (WidgetTester tester) async{
+    await tester.pumpWidget(MyApp());
+
+    // Tap the '+' icon and trigger a frame.
+    await tester.tap(find.byIcon(FontAwesomeIcons.cog));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('Gospels'), findsNothing);
+    expect(find.text('Epistles'), findsNothing);
+  });
+
 }

@@ -39,7 +39,7 @@ class _EpistlesState extends State<Epistles> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                          title: "Epistle to the Romans",
+                          title: "Romans",
                           items: 16,
                           religion: "Christianity",
                         ),
@@ -59,7 +59,7 @@ class _EpistlesState extends State<Epistles> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                          title: "First Epistle to the Corinthians",
+                          title: "1Corinthians",
                           items: 16,
                           religion: "Christianity",
                         ),
@@ -79,7 +79,7 @@ class _EpistlesState extends State<Epistles> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                          title: "Second Epistle to the Corinthians",
+                          title: "2Corinthians",
                           items: 13,
                           religion: "Christianity",
                         ),
@@ -99,7 +99,7 @@ class _EpistlesState extends State<Epistles> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                          title: "Epistle to the Galatians",
+                          title: "Galatians",
                           items: 6,
                           religion: "Christianity",
                         ),
@@ -119,7 +119,7 @@ class _EpistlesState extends State<Epistles> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                          title: "Epistle to the Ephesians*",
+                          title: "Ephesians",
                           items: 6,
                           religion: "Christianity",
                         ),
@@ -139,7 +139,7 @@ class _EpistlesState extends State<Epistles> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                          title: "Epistle to the Philippians",
+                          title: "Philippians",
                           items: 4,
                           religion: "Christianity",
                         ),
@@ -159,7 +159,7 @@ class _EpistlesState extends State<Epistles> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => Bible(
-                          title: "Epistle to the Colossians*",
+                          title: "Colossians",
                           items: 4,
                           religion: "Christianity",
                         ),
@@ -178,7 +178,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "First Epistle to the Thessalonians",
+                            title: "1Thessalonians",
                             items: 5,
                             religion: "Christianity",
                           ),
@@ -196,7 +196,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Second Epistle to the Thessalonians*",
+                            title: "2Thessalonians",
                             items: 3,
                             religion: "Christianity",
                           ),
@@ -223,7 +223,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "First Epistle to Timothy",
+                            title: "1Timothy",
                             items: 6,
                             religion: "Christianity",
                           ),
@@ -241,7 +241,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Second Epistle to Timothy",
+                            title: "2Timothy",
                             items: 4,
                             religion: "Christianity",
                           ),
@@ -259,7 +259,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Epistle to Titus",
+                            title: "Titus",
                             items: 3,
                             religion: "Christianity",
                           ),
@@ -277,7 +277,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Epistle to Philemon",
+                            title: "Philemon",
                             items: 1,
                             religion: "Christianity",
                           ),
@@ -331,7 +331,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Epistle of James",
+                            title: "James",
                             items: 5,
                             religion: "Christianity",
                           ),
@@ -349,7 +349,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "First Epistle of Peter",
+                            title: "1Peter",
                             items: 5,
                             religion: "Christianity",
                           ),
@@ -367,7 +367,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Second Epistle of Peter",
+                            title: "2Peter",
                             items: 3,
                             religion: "Christianity",
                           ),
@@ -385,7 +385,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "First Epistle of John",
+                            title: "1John",
                             items: 5,
                             religion: "Christianity",
                           ),
@@ -403,7 +403,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Second Epistle of John",
+                            title: "2John",
                             items: 1,
                             religion: "Christianity",
                           ),
@@ -421,7 +421,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Third Epistle of John",
+                            title: "3John",
                             items: 1,
                             religion: "Christianity",
                           ),
@@ -439,7 +439,7 @@ class _EpistlesState extends State<Epistles> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => Bible(
-                            title: "Epistle of Jude",
+                            title: "Jude",
                             items: 1,
                             religion: "Christianity",
                           ),
